@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.dark-theme {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-theme input[type="text"] {
+  background-color: #444;
+  color: #fff;
+}
+
+.light-theme {
+  background-color: #fff;
+  color: #333;
+}
+
+.light-theme input[type="text"] {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu-toggle {
+  margin-right: 10px;
+}
+
+.sidenav {
+  width: 250px;
+  height: 100%;
+  border-right: #222;
+}
+
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidenav ul li {
+  padding: 10px;
+}
+
+.sidenav ul li a {
+  text-decoration: none;
+}
+
+.search-container {
+  position: relative;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+}
+
+.chevron-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+}
+
+.chevron-icon {
+  transition: transform 0.3s ease;
+}
+
+.collapsed .menu {
+  display: none;
+}
+
+.menu {
+  overflow-x: hidden; /* Hide horizontal overflow */
+  transition: width 0.3s ease; /* Add transition for smooth animation */
+}
+
+.menu.collapsed {
+  width: 0px; /* Set collapsed width */
+}
+
+.menu-toggle {
+  margin-bottom: 10px; /* Adjust margin for toggle */
+}
+
+.sidenav {
+  width: max-content;
+  height: 100%;
+  transition: width 0.3s ease; /* Add transition for smooth animation */
+}
+
+.chevron-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  z-index: 1; /* Ensure chevron is on top of the menu */
+}
+
+.chevron-icon {
+  transition: transform 0.3s ease;
+}
+
+.collapsed .chevron-icon {
+  transform: rotate(180deg); /* Rotate chevron icon when menu is collapsed */
+}
+
+.eachContact :hover{
+  border-left: 5px solid blueviolet;
+}
