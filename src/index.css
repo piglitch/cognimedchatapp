@@ -76,22 +76,22 @@
 }
 
 .menu {
-  overflow-x: hidden; /* Hide horizontal overflow */
-  transition: width 0.3s ease; /* Add transition for smooth animation */
+  overflow-x: hidden; 
+  transition: width 0.3s ease; 
 }
 
 .menu.collapsed {
-  width: 0px; /* Set collapsed width */
+  width: 0px; 
 }
 
 .menu-toggle {
-  margin-bottom: 10px; /* Adjust margin for toggle */
+  margin-bottom: 10px; 
 }
 
 .sidenav {
   width: max-content;
   height: 100%;
-  transition: width 0.3s ease; /* Add transition for smooth animation */
+  transition: width 0.3s ease; 
 }
 
 .chevron-btn {
@@ -99,7 +99,7 @@
   top: 0;
   right: 0;
   transform: translateX(100%);
-  z-index: 1; /* Ensure chevron is on top of the menu */
+  z-index: 1; 
 }
 
 .chevron-icon {
@@ -107,7 +107,7 @@
 }
 
 .collapsed .chevron-icon {
-  transform: rotate(180deg); /* Rotate chevron icon when menu is collapsed */
+  transform: rotate(180deg); 
 }
 
 .eachContact :hover{
